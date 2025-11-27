@@ -1,10 +1,3 @@
-# Patch imghdr for Python 3.13
-import sys
-if sys.version_info >= (3, 13):
-    import types
-    import sys
-    sys.modules['imghdr'] = types.SimpleNamespace()
-
 import os
 import ftplib
 import asyncio
